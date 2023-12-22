@@ -2,13 +2,10 @@ from abc import ABC, abstractmethod
 import datetime
 from random import randint
 import random
-
 import tkinter as tk
 from PIL.ImageTk import PhotoImage
 import cv2 
 from prettytable import PrettyTable
-
-
 x = PrettyTable()
 
 class Hayvanlar:
@@ -23,10 +20,9 @@ class Hayvanlar:
         self.yetenek     = yetenek
         self.olay        = olay
 
-        
 class Ziyaretciler:
-    AileYaslıst = [16,28,46,53,55,19,40,35,42,17,19,53,54,45]
-    OgrencıYaslıst = [18,22,19,7,9,12,15,13,17,11,13]
+    AileYaslıst     = [16,28,46,53,55,19,40,35,42,17,19,53,54,45]
+    OgrencıYaslıst  = [18,22,19,7,9,12,15,13,17,11,13]
     BıreyselYaslıst = [16,19,22,25,46,43,32,51]
     def __init__(self,zYasi,grupTuru,yemleme,hayvanlarıIzleme,degisken = AileYaslıst,degısken2 = OgrencıYaslıst,degısken3 = BıreyselYaslıst):
         self.zYasi                = zYasi    
