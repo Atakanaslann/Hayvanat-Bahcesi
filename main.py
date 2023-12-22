@@ -6,7 +6,9 @@ import tkinter as tk
 from PIL.ImageTk import PhotoImage
 import cv2 
 from prettytable import PrettyTable
+
 x = PrettyTable()
+
 class Hayvanlar:
     def __init__(self,isim,yasi,cinsi,saglik,yeme,uyuma,hareketEtme,yetenek,olay):
         self.isim        = isim
@@ -33,7 +35,6 @@ class Ziyaretciler:
         self.ogrenciYasListesi    = degısken2
         self.bireyselYasListesi   = degısken3
        
-
         
     def yasGrup(self):
         print("\nZiyaretçi Girişi Yapıldı\n")
