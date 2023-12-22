@@ -7,7 +7,7 @@ from PIL.ImageTk import PhotoImage
 import cv2 
 from prettytable import PrettyTable
 x = PrettyTable()
-
+print("Omerfakmeşe")
 class Hayvanlar:
     def __init__(self,isim,yasi,cinsi,saglik,yeme,uyuma,hareketEtme,yetenek,olay):
         self.isim        = isim
