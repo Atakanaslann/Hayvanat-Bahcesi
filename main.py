@@ -581,17 +581,17 @@ while True:
                 temizleme=0
 
                 if gorevSecim==1 and yem == 0 :
-                    print("Bütün hayvanlara yem verildi.")
+                    print("\nBütün hayvanlara yem verildi.")
                     yem += 1               
 
                 elif gorevSecim==1 and yem == 1:
-                    print("Bütün yemler taze.")
+                    print("\nBütün yemler taze.")
 
                 elif gorevSecim==2 and temizleme==0:
-                    print("Çevre temizliği yapıldı.")
+                    print("\nÇevre temizliği yapıldı.")
 
                 elif gorevSecim==2 and temizleme==1:
-                    print("Hayvanat bahçesi temiz.")
+                    print("\nHayvanat bahçesi temiz.")
 
                 elif gorevSecim==3:
                     ornek = Ziyaretciler("","","","","","","")
@@ -635,8 +635,7 @@ while True:
                     def pasta_dilimi(elemanlar, degerler):
 
                         grafik = int(ekran_yuk / 6)
-                        buton_x = ((ekran_gen - ekran_yuk) / 2) + ekran_yuk
-                        buton_y = ekran_yuk / (2 * (len(elemanlar) + 1))
+                        
                         bas = 0
 
                         for i, j in elemanlar.items():
